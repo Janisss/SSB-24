@@ -31,7 +31,7 @@ h1.gray{
 	padding-left: 0;
 }
 
-p{
+.padding-30{
 	padding-bottom: 30px;
 }
 
@@ -96,6 +96,7 @@ nav{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .icolor{
