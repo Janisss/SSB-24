@@ -84,6 +84,10 @@ nav ul{
 
 nav{
 	border-bottom: 2px solid var(--easyColor);
+	position: fixed;
+	width: 100%;
+	margin-top: -90px;
+	background: white;	
 }
 
 .header-pic{
@@ -91,7 +95,8 @@ nav{
 	background-image: url(./../../../images/header_image.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center
+	background-position: center;
+	margin-top: 90px;
 }
 
 .parallax{
@@ -106,6 +111,12 @@ nav{
 .icolor{
 	color: var(--grayColor);
 	margin-top:29px;
+}
+
+.heart-icon img{
+	display: block;
+	max-width: 80%;
+	margin: 30px auto;
 }
 
 .old-woman{
