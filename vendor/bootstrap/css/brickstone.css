@@ -2,6 +2,7 @@
 :root{
 	--mainColor: #5A1B1E;
 	--easyColor: #CE8992;
+	--grayColor: #515151;
 	--mainFont: Helvetica;
 }
 
@@ -23,6 +24,11 @@ h1{
 	font-size: 18pt;
 	text-align: center;
 	padding: 30px 0 10px;
+}
+
+h1.gray{
+	color: var(--grayColor);
+	padding-left: 0;
 }
 
 p{
@@ -90,4 +96,16 @@ nav{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+.icolor{
+	color: var(--grayColor);
+	margin-top:29px;
+}
+
+.old-woman{
+	background-image: url(../../../images/content_img1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 180px;
 }
