@@ -9,9 +9,16 @@ a{
 	color: var(--mainColor);
 	text-transform: uppercase;
 }
+
+a:hover{
+	text-decoration: none;
+	color: var(--easyColor);
+}
+
 a.active{
 	color: var(--easyColor);
 }
+
 h1{
 	font-size: 18pt;
 	text-align: center;
@@ -20,6 +27,19 @@ h1{
 
 p{
 	padding-bottom: 30px;
+}
+
+.hover-menu{
+	color: var(--mainColor);
+	opacity: 0;
+	transition: all .4s ease;
+	position: relative;
+	top: -20px;
+}
+
+nav a:hover .hover-menu{
+	opacity: 1;
+	top:0;
 }
 
 .c-w{
