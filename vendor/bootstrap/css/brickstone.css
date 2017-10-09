@@ -1,7 +1,23 @@
 
 :root{
 	--mainColor: #5A1B1E;
+	--easyColor: #CE8992;
 	--mainFont: Helvetica;
+}
+
+a{
+	color: var(--mainColor);
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 20pt;
+	text-align: center;
+	padding: 20px;
+}
+
+.c-w{
+	color: white;
 }
 
 nav li{
@@ -12,6 +28,7 @@ nav li{
 	color: var(--mainColor);
 	font-family: var(--mainFont);
 	line-height: 3.5;
+	font-weight: 100;
 }
 
 nav ul{
@@ -22,17 +39,29 @@ nav ul{
 	margin: 20px;
 }
 
-.logo img{
-	width: 100%;
-	margin-top: 30px;
-	margin-bottom: 30px;	
+.logo{
+	background-image: url(./../../../images/ssb_logo.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 nav{
-	border-bottom: 1px solid var(--mainColor);
+	border-bottom: 2px solid var(--easyColor);
 }
 
 .header-pic{
 	height: 500px;
-	background-image: url(images/header_image.png);
+	background-image: url(./../../../images/header_image.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center
+}
+
+.parallax{
+	min-height: 180px;
+	background-image: url(../../../images/bg_parallax.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
