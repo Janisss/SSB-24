@@ -1,0 +1,38 @@
+
+:root{
+	--mainColor: #5A1B1E;
+	--mainFont: Helvetica;
+}
+
+nav li{
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 10px;
+	color: var(--mainColor);
+	font-family: var(--mainFont);
+	line-height: 3.5;
+}
+
+nav ul{
+	display: block;
+	background: white;
+	text-align: right;
+	float: right;
+	margin: 20px;
+}
+
+.logo img{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;	
+}
+
+nav{
+	border-bottom: 1px solid var(--mainColor);
+}
+
+.header-pic{
+	height: 500px;
+	background-image: url(images/header_image.png);
+}
