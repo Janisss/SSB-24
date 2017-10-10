@@ -50,7 +50,7 @@ h1.gray{
 
 nav a:hover .hover-menu{
 	opacity: 1;
-	top:0;
+	top: 0;
 	z-index: 5;
 }
 
@@ -82,6 +82,12 @@ nav ul{
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.logo-small{
+	background-size: 70%;
+}
+
+.minimenu{
 }
 
 nav{
@@ -232,5 +238,11 @@ footer{
 		font-size: .8rem;
 		line-height: 4.5;
 		padding: 0;
+	}
+}
+
+@media (max-width: 767px){
+	.showsmall{
+		display: block !important;
 	}
 }
