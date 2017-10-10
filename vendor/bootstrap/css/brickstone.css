@@ -7,6 +7,7 @@ body{
 	--mainColor: #5A1B1E;
 	--easyColor: #CE8992;
 	--grayColor: #515151;
+	--lightGray: #999999;
 	--mainFont: Helvetica;
 }
 
@@ -50,6 +51,7 @@ h1.gray{
 nav a:hover .hover-menu{
 	opacity: 1;
 	top:0;
+	z-index: 5;
 }
 
 .c-w{
@@ -88,10 +90,10 @@ nav{
 	width: 100%;
 	margin-top: -90px;
 	background: white;	
+	z-index: 99;
 }
 
 .header-pic{
-	height: 500px;
 	background-image: url(./../../../images/header_image.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -101,12 +103,22 @@ nav{
 
 .parallax{
 	min-height: 180px;
-	background-image: url(../../../images/bg_parallax.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	position: relative;
 	overflow: hidden;
-	-webkit-transform:translatez(0);
+}
+.parallax:before {
+	background-image: url(./../../../images/bg_parallax.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	will-change: transform;
+	z-index: -1;
 }
 
 .icolor{
@@ -128,5 +140,74 @@ nav{
 }
 
 .comment{
-	position: absolute;
+	padding-top: 300px;
+	padding-bottom: 200px;
+}
+
+span.main-comment{
+	background-color: rgba(255,255,255,0.50);
+	padding: 10px;
+	color: var(--mainColor);
+	font-size: 1.5rem;
+	text-align: right;
+	display: block;
+}
+
+span.subcomment{
+	width: 100%;
+	color: white;
+	font-size: 1.3rem;
+	text-align: right;
+	display: block;
+}
+
+.form-wrapper{
+	padding: 60px 0;
+	width: 100%;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input{
+	width: 100%;
+	background: transparent;
+	border-bottom: 1px solid var(--lightGray);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: white;
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+}
+textarea{
+	width: 100%;
+	background: transparent;
+	border-bottom: 1px solid var(--lightGray);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	resize: none;
+	height: 200px;
+	color: white;
+	font-size: 1.2rem;
+}
+
+.formname{
+	color: var(--lightGray);
+}
+
+button.btn-send{
+	background: transparent;
+	margin: 30px auto;
+	display: block;
+	border: 1px solid var(--lightGray);
+	max-width: 150px;
+	text-transform: uppercase;
+	color: var(--lightGray);
+	padding: 5px 15px;
+}
+
+.divider{
+	height: 100px;
 }
