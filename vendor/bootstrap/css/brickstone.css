@@ -195,6 +195,10 @@ nav{
 	background-image: url(./../../../images/header_image_preis.png);
 }
 
+.header-pic.leistungen{
+	background-image: url(./../../../images/header_image_leistungen.png);
+}
+
 .parallax{
 	position: relative;
 	overflow: hidden;
