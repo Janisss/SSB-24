@@ -199,6 +199,14 @@ nav{
 	background-image: url(./../../../images/header_image_leistungen.png);
 }
 
+.header-pic.info{
+	background-image: url(./../../../images/header_image_anfrage.png);
+}
+
+.header-pic.anfrage{
+	background-image: url(./../../../images/header_image_anfrage.png);
+}
+
 .parallax{
 	position: relative;
 	overflow: hidden;
@@ -349,4 +357,27 @@ footer{
 	.showsmall{
 		display: block !important;
 	}
+}
+
+.alert-success{
+	padding: 5px;
+	font-size: .8rem;
+}
+
+.customimg{
+	height: 425px;
+	background-image: url(../../../images/content_img3.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.customimg-2{
+	height: 425px;
+	background-image: url(../../../images/content_img4.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.graycolor{
+	background-color: white;
 }
