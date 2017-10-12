@@ -92,6 +92,7 @@ nav ul{
 	height: 100%;
 	position: relative;
 	right: 30px;
+	cursor: pointer;
 }
 
 .mobile-menu-popup{
@@ -101,23 +102,68 @@ nav ul{
 	width: 100vw;
 	height: 100vh;
 	background-color: var(--mainColor);
-	overflow: auto;
+	overflow: hidden;
 }
 
 .part-one{
-	border: 1px solid white;
 	width: 100%;
 	height: 100vh;
-	background-color: green;
 	overflow: auto;
 }
 
 .part-two{
-	border: 1px solid white;
 	width: 100%;
 	height: 100vh;
-	background: red;
 	overflow: auto;
+}
+
+.mobile-menu-popup li{
+	color: white;
+	width: 100%;
+	display: block;
+	font-size: 6vw;
+	padding: 0;
+	line-height: 2;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.mobile-menu-popup li:hover{
+	background: var(--easyColor);
+}
+
+.mobile-menu-popup li:hover i{
+	color: var(--mainColor);
+}
+
+.mobile-menu-popup li i{
+	color: var(--easyColor);
+}
+
+.close-me{
+	color: white;
+	display: block;
+	width: 50%;
+	text-align: right;
+	padding: 35px 45px;
+	cursor: pointer;
+}
+
+.slide-up{
+	color: white;
+	display: block;
+	width: 50%;
+	text-align: left;
+	padding: 35px 45px;
+	cursor: pointer;
+}
+
+.close-me a{
+	color: white;
+}
+
+.mobile-menu-popup ul{
+	background-color: transparent;
 }
 
 nav{
@@ -131,11 +177,18 @@ nav{
 }
 
 .header-pic{
-	background-image: url(./../../../images/header_image.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-top: 90px;
+}
+
+.header-pic.home{
+	background-image: url(./../../../images/header_image.png);
+}
+
+.header-pic.preis{
+	background-image: url(./../../../images/header_image_preis.png);
 }
 
 .parallax{
@@ -205,6 +258,9 @@ span.subcomment{
 	margin-left: auto;
 	margin-right: auto;
 }
+.form-wrapper.mini{
+	margin: 0 50px;
+}
 
 input{
 	width: 100%;
@@ -228,6 +284,10 @@ textarea{
 	height: 200px;
 	color: white;
 	font-size: 1.2rem;
+}
+
+.textarea-mini{
+	height: 100px;
 }
 
 .formname{
