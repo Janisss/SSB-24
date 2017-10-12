@@ -192,7 +192,6 @@ nav{
 }
 
 .parallax{
-	min-height: 180px;
 	position: relative;
 	overflow: hidden;
 }
@@ -222,11 +221,18 @@ nav{
 	margin: 30px auto;
 }
 
-.old-woman{
-	background-image: url(../../../images/content_img1.png);
+.halfpic{
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 180px;
+}
+
+.old-woman{
+	background-image: url(../../../images/content_img1.png);
+}
+
+.old-woman-2{
+	background-image: url(../../../images/content_img2.png);
 }
 
 .comment{
