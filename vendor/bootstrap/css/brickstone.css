@@ -16,6 +16,10 @@ a{
 	text-transform: uppercase;
 }
 
+p{
+	line-height: 1.4;
+}
+
 a:hover{
 	text-decoration: none;
 	color: var(--easyColor);
@@ -25,7 +29,7 @@ a.active{
 	color: var(--easyColor);
 }
 
-h1{
+h1, h2{
 	font-size: 18pt;
 	text-align: center;
 	padding: 30px 0 10px;
@@ -189,6 +193,10 @@ nav{
 
 .header-pic.preis{
 	background-image: url(./../../../images/header_image_preis.png);
+}
+
+.header-pic.leistungen{
+	background-image: url(./../../../images/header_image_leistungen.png);
 }
 
 .parallax{
