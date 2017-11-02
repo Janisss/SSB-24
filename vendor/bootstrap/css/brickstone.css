@@ -200,7 +200,7 @@ nav{
 }
 
 .header-pic.info{
-	background-image: url(./../../../images/header_image_anfrage.png);
+	background-image: url(./../../../images/header_image_informationen.png);
 }
 
 .header-pic.anfrage{
@@ -250,6 +250,10 @@ nav{
 
 .old-woman-2{
 	background-image: url(../../../images/content_img2.png);
+	background-repeat: no-repeat;
+}
+.old-woman-c{
+	background-image: url(../../../images/content_img5.png);
 	background-repeat: no-repeat;
 }
 
@@ -383,3 +387,5 @@ footer{
 .graycolor{
 	background-color: white;
 }
+
+
