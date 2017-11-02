@@ -10,6 +10,14 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/brickstone.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	  <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('senden', {
+          'sitekey' : '6Lf-NDQUAAAAAOXRuFJvd6nPkvzvT9Mnt483bbAI'
+        });
+      };
+    </script>
   </head>
   <body>
 
@@ -112,7 +120,7 @@
     			<h1 class="c-w">Schweizer Senioren Betreuung 24</h1>
     			<p class="c-w text-center padding-30">
     			Holen Sie sich von Anfang an professionelle Unterstützung bei der Seniorenbetreuung. Je früher Sie sich Pflegepersonal zur Seite stellen, desto schneller und reibungsloser gelingt die Gewöhnung an die neue Lebenssituation. Wir lassen Sie dabei nicht im Stich. <br><br>
-          Nach der Bedarfsermittlung bekommen Sie ohne Verzögerung die Betreuungskraft, welche zu Ihrer Situation passt. Wir achten dabei neben den beruflichen Kompetenzen auch auf persönliche Eigenschaften, damit eine effiziente Betreuung und ein harmonisches Zusammenleben möglich sind. Sie haben bei der Auswahl selbstverständlich das letzte Wort.
+          Nach der Bedarfsermittlung bekommen Sie ohne Verzögerung den Vorschlag einer Betreuungskraft, welche zu Ihrer Situation passt. Wir achten dabei neben den beruflichen Kompetenzen auch auf persönliche Eigenschaften, damit eine effiziente Betreuung und ein harmonisches Zusammenleben möglich sind. Sie haben bei der Auswahl selbstverständlich das letzte Wort.
     			</p>
     		</div>
     	</div>
@@ -156,13 +164,17 @@
   						<span class="formname">Telefonnummer *</span>
   						<input type="text" name="tel">
   						<span class="formname">Beschreibung *</span>
-  						<textarea name="text"></textarea>
+  						<textarea name="text"></textarea><br><br>
+  						<div class="g-recaptcha d-block" style="margin: auto" data-sitekey="6Lf-NDQUAAAAAOXRuFJvd6nPkvzvT9Mnt483bbAI"></div>
+						<div id="senden">
 						<button class="btn-send" name="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Senden</button>
+						</div>
   					</form>
   				</div>
   			</div>
   		</div>
-  	<!-- FORM END -->    <!-- MAP -->
+  	<!-- FORM END --> 
+	<!-- MAP -->
     	<div class="container-fluid map">
 			<iframe src="https://snazzymaps.com/embed/26067" width="100%" height="600px" style="border:none;"></iframe>
      	</div>
@@ -177,12 +189,12 @@
     						<div class="row">
     							<div class="col-md-4 text-right d-none d-lg-block">TELEFONNUMMER</div>
     							<div class="col-md-1"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
-    							<div class="col-md-7">+421 999 999 999</div>
+    							<div class="col-md-7">???</div>
     						</div>
     						<div class="row">
     							<div class="col-md-4 text-right d-none d-lg-block">EMAIL ADRESSE</div>
     							<div class="col-md-1"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
-    							<div class="col-md-7">INFO@SSB-24.CH</div>
+    							<div class="col-md-7"><a href="mailto:info@ssb-24.ch">info@ssb-24.ch</a></div>
     						</div>
     					</div>
     					<div class="col-md-6">    						<div class="row">
@@ -197,6 +209,7 @@
     						</div>
     				</div>
     			</div>
+    		</div>
     		</div>
     	</footer>
     <!-- FOOTER END -->

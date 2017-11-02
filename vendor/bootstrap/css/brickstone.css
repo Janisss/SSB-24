@@ -3,6 +3,10 @@ body{
 	overflow-x: hidden;
 }
 
+.mobile-menu-popup{
+	display: none;
+}
+
 :root{
 	--mainColor: #5A1B1E;
 	--easyColor: #CE8992;

@@ -10,7 +10,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/brickstone.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript">
       var onloadCallback = function() {
         grecaptcha.render('senden', {
@@ -249,8 +249,8 @@
   						<span class="formname">Telefonnummer *</span>
   						<input type="text" name="tel">
   						<span class="formname">Beschreibung *</span>
-  						<textarea name="text"></textarea>
-  						<div class="g-recaptcha" data-sitekey="6Lf-NDQUAAAAAOXRuFJvd6nPkvzvT9Mnt483bbAI"></div>
+  						<textarea name="text"></textarea><br><br>
+  						<div class="g-recaptcha d-block" style="margin: auto" data-sitekey="6Lf-NDQUAAAAAOXRuFJvd6nPkvzvT9Mnt483bbAI"></div>
 						<div id="senden">
 						<button class="btn-send" name="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Senden</button>
 						</div>
@@ -275,12 +275,12 @@
     						<div class="row">
     							<div class="col-md-4 text-right d-none d-lg-block">TELEFONNUMMER</div>
     							<div class="col-md-1"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
-    							<div class="col-md-7">+421 999 999 999</div>
+    							<div class="col-md-7">???</div>
     						</div>
     						<div class="row">
     							<div class="col-md-4 text-right d-none d-lg-block">EMAIL ADRESSE</div>
     							<div class="col-md-1"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div>
-    							<div class="col-md-7">INFO@SSB-24.CH</div>
+    							<div class="col-md-7"><a href="mailto:info@ssb-24.ch">info@ssb-24.ch</a></div>
     						</div>
     					</div>
     					<div class="col-md-6">    						<div class="row">
@@ -295,6 +295,7 @@
     						</div>
     				</div>
     			</div>
+    		</div>
     		</div>
     	</footer>
     <!-- FOOTER END -->
