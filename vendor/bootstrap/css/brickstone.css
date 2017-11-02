@@ -343,9 +343,8 @@ footer{
 }
 
 .map{
-	background-image: url(../../../images/map.png);
-	background-size: cover;
-	height: 500px;
+	background: white;
+	
 }
 
 .last{
