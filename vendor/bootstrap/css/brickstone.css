@@ -344,7 +344,8 @@ footer{
 
 .map{
 	background: white;
-	
+	margin: 0;
+	padding: 0;
 }
 
 .last{
