@@ -20,8 +20,8 @@
 		.'<span style="color:Brown">Beschreibung: </span>'.$_POST['text']."<hr>"
 		.'<span style="color:Gray">PHP mail-generator by Brickstone.design. If you find any problem please report at info@brickstone.design</span>';
 
-		mail('info@brickstone.design', '-> SSB-24 WEB', $emailbody ,'Content-Type: text/html; charset=UTF-8');
-		header("Location:./index.html");	
+		mail('info@ssb-24.ch', '-> SSB-24 WEB', $emailbody ,'Content-Type: text/html; charset=UTF-8');
+		header("Location:./index_danke.html");	
 		}
     }
 }
